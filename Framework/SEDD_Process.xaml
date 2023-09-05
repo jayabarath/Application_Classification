@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>734.4,4574.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>734.4,4721.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SEDD_Process_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -108,7 +108,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SEDD_Process" sap:VirtualizedContainerService.HintSize="744.8,4509.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SEDD_Process" sap:VirtualizedContainerService.HintSize="744.8,4656.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="SEDD_Folder" />
       <Variable x:TypeArguments="ui:Browser" Name="ERPBrowserPage" />
@@ -133,13 +133,13 @@
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
     <ui:AppendLine File="{x:Null}" DisplayName="SEDD process started log Message" FileName="[In_Config(&quot;ProcessLogPath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="682.4,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[Now.ToString+vbTab+&quot;SEDD process strated&quot;]" UseDefaultEncoding="False" />
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser in SEDD page (Economic Development)" sap:VirtualizedContainerService.HintSize="682.4,3883.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[Open_SEDD_Page]" Url="[In_Config(&quot;SEDD_URL&quot;).ToString]">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser in SEDD page (Economic Development)" sap:VirtualizedContainerService.HintSize="682.4,4030.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[Open_SEDD_Page]" Url="[In_Config(&quot;SEDD_URL&quot;).ToString]">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="648.8,3757.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence sap:VirtualizedContainerService.HintSize="648.8,3904.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -468,7 +468,7 @@
                 </Catch>
               </TryCatch.Catches>
             </TryCatch>
-            <TryCatch DisplayName="SEDD Process" sap:VirtualizedContainerService.HintSize="586.4,3488" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="SEDD Process" sap:VirtualizedContainerService.HintSize="586.4,3635.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -476,7 +476,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <TryCatch.Try>
-                <If Condition="[SEDD_LoginIssue = True]" DisplayName="Check is login issue" sap:VirtualizedContainerService.HintSize="549.6,3256.8" sap2010:WorkflowViewState.IdRef="If_13">
+                <If Condition="[SEDD_LoginIssue = True]" DisplayName="Check is login issue" sap:VirtualizedContainerService.HintSize="549.6,3404" sap2010:WorkflowViewState.IdRef="If_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -493,13 +493,13 @@
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Sequence sap:VirtualizedContainerService.HintSize="516,2991.2" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                    <Sequence sap:VirtualizedContainerService.HintSize="516,3138.4" sap2010:WorkflowViewState.IdRef="Sequence_50">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Process Sequence" sap:VirtualizedContainerService.HintSize="472.8,2901.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence DisplayName="Process Sequence" sap:VirtualizedContainerService.HintSize="472.8,3048.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Int32" Name="File_Count" />
                           <Variable x:TypeArguments="x:Boolean" Name="Is_SeedFolder" />
@@ -1300,7 +1300,7 @@
                             </ui:Target>
                           </ui:UiElementExists.Target>
                         </ui:UiElementExists>
-                        <If Condition="[is_NoRecord]" DisplayName="Check There are no records. is exits or not" sap:VirtualizedContainerService.HintSize="410.4,1650.4" sap2010:WorkflowViewState.IdRef="If_16">
+                        <If Condition="[is_NoRecord]" DisplayName="Check There are no records. is exits or not" sap:VirtualizedContainerService.HintSize="410.4,1797.6" sap2010:WorkflowViewState.IdRef="If_16">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1327,7 +1327,7 @@
                             </Sequence>
                           </If.Then>
                           <If.Else>
-                            <Sequence sap:VirtualizedContainerService.HintSize="376.8,1467.2" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                            <Sequence sap:VirtualizedContainerService.HintSize="376.8,1614.4" sap2010:WorkflowViewState.IdRef="Sequence_57">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="x:Boolean" Name="is_investorLicenceStatement" />
                                 <Variable x:TypeArguments="x:String" Name="Licence_Number" />
@@ -2770,6 +2770,28 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:CommentOut>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Back Button" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_64" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3330d27d-9fdb-41be-b133-b61f11bd0659" InformativeScreenshot="8c3374c9d9297b7178ca06a804d9d131" Selector="&lt;html app='chrome.exe' title='eservices.sedd.ae/eservicesweb/*' /&gt;&lt;webctrl parentname='licDetails:j_idt119:j_idt172' tag='SPAN' aaname='رجوع' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
                             </Sequence>
                           </If.Else>
                         </If>
